@@ -1,6 +1,9 @@
 Gnome 40 workspaces concept
 ===========================
 
+### Try it:
+[Go to webpage](https://pronink.github.io/gnome40-workspaces-concept/src/)
+
 ### Run:
 - Install npm
 - Run `npm start` in a terminal
