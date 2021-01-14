@@ -1,0 +1,14 @@
+{
+  "name": "gnome40",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve src"
+  },
+  "author": "Ismael García",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
