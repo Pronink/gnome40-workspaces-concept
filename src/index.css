@@ -1,18 +1,32 @@
+* {
+    box-sizing: border-box;
+}
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: fit-content;
+    min-height: calc(100vh - 24px); /*24px because is the height of the horizontal scroll*/
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    padding: 20px;
     background-color: #bababa;
+}
+
+@media all and (max-height: 900px) {
+    body{
+        align-items: start;
+    }
 }
 
 #desktop {
     position: relative;
     background-color: black;
     width: 1600px;
+    min-width: 1600px;
+    max-width: 1600px;
     height: 900px;
+    min-height: 900px;
+    max-height: 900px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
@@ -50,7 +64,7 @@ body {
     bottom: 18px;
     background-color: #3b3b3b;
     width: fit-content;
-    height: 45px;
+    height: 80px;
     padding: 18px;
     border-radius: 25px;
     margin-left: 50%;
