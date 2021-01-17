@@ -1,6 +1,12 @@
+:root {
+    --topbar-height: 27px;
+    --topbar-border-radius: 10px 10px 0 0;
+}
+
 * {
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     align-items: center;
@@ -13,7 +19,7 @@ body {
 }
 
 @media all and (max-height: 900px) {
-    body{
+    body {
         align-items: start;
     }
 }
@@ -40,24 +46,40 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 27px;
+    height: var(--topbar-height);
 }
 
 #view {
     position: absolute;
-    top: 27px;
+    top: var(--topbar-height);
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #272727;
-    border-radius: 10px 10px 0 0;
+    border-radius: var(--topbar-border-radius);
+}
+
+#workspaces {
+    border-radius: var(--topbar-border-radius);
+    height: 100%;
+    width: 100%;
 }
 
 .workspace {
+    position: absolute;
+    border-radius: var(--topbar-border-radius);
     background-image: url("res/DesktopBackground.png");
     background-size: cover;
     background-position: center center;
+    transition: all 0.5s;
 }
+
+/*.workspace[data-selected="true"] {*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*}*/
 
 #dock {
     position: absolute;
@@ -78,4 +100,10 @@ body {
     margin: 4px 8px;
     background-color: white;
     border-radius: 100%;
+}
+
+
+#ui {
+    position: fixed;
+    bottom: 10px;
 }

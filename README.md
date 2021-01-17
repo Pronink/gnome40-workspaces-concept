@@ -2,7 +2,7 @@ Gnome 40 workspaces concept
 ===========================
 
 ### Try it:
-[Go to webpage](https://pronink.github.io/gnome40-workspaces-concept/dist/)
+**WORK IN PROGRESS:** [Open webpage](https://pronink.github.io/gnome40-workspaces-concept/dist/)
 
 ### Run:
 - Install npm
