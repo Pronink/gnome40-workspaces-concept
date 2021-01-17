@@ -2,11 +2,11 @@ Gnome 40 workspaces concept
 ===========================
 
 ### Try it:
-[Go to webpage](https://pronink.github.io/gnome40-workspaces-concept/src/)
+[Go to webpage](https://pronink.github.io/gnome40-workspaces-concept/dist/)
 
 ### Run:
 - Install npm
-- Run `npm start` in a terminal
+- Run `npm install` and `npm start` in a terminal
 - Open http://localhost:5000 in a web browser (only tested in Google Chrome)
 
 ### Goals:
